@@ -9,7 +9,7 @@
 
   --color-borders: #ccc;
 
-  --border-radius: 30px;
+  --border-radius: 40px;
 }
 
 *,
@@ -221,6 +221,13 @@ Icons
   outline: none;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 .btn:active {
   border: 0;
 }
@@ -281,7 +288,7 @@ Inputs
 */
 
 .input {
-  padding: 1.5rem 3.5rem;
+  padding: 1.5rem 2rem;
   border: 1px solid var(--color-borders);
   border-radius: var(--border-radius);
   outline: 0;
@@ -303,6 +310,7 @@ Inputs
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 1rem;
+  width: 100%;
 }
 
 .input-group .btn {
@@ -719,5 +727,35 @@ Callout
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/*
+  Individual pages styles
+*/
+/* 
+DomainBlock 
+*/
+
+.block-domain .input-group {
+  box-shadow: 0 0 20px 10px #c0c4c7;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
