@@ -122,6 +122,10 @@ Badges
   color: #fff;
 }
 
+.card--primary .badge--primary {
+  background: #126de4;
+}
+
 .badge--small {
   font-size: 1.6rem;
   padding: 0.5rem 1.5rem;
@@ -490,10 +494,16 @@ Plans
   .grid--cols-1x2 {
     grid-template-columns: 1fr 1fr;
   }
+  .grid--cols-1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (min-width: 1024px) {
   .grid--cols-1x2 {
     grid-template-columns: 1fr 1fr;
+  }
+  .grid--cols-1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -757,5 +767,31 @@ DomainBlock
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+
+/* Plans */
+.plans .grid {
+  gap: 4rem;
+}
+
+/*
+.plans .plan {
+  padding: 1rem;
+}
+*/
+
+.plans .plan--popular {
+  transform: scaleY(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  .plans .plan:hover {
+    transform: scaleY(1.05);
+    transition: all 0.5s ease-in-out;
+  }
+  .plans .plan--popular:hover {
+    transform: scaleY(1.1);
+    transition: all 0.5s ease-in-out;
   }
 }
