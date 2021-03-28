@@ -32,7 +32,7 @@ body {
   color: var(--color-body);
   line-height: 1.5;
   font-family: "Inter", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 h1,
@@ -414,9 +414,7 @@ Plans
   }
 }
 
-/*
- Media
- */
+/* Media */
 .media {
   display: flex;
 }
@@ -793,5 +791,29 @@ DomainBlock
   .plans .plan--popular:hover {
     transform: scaleY(1.1);
     transition: all 0.5s ease-in-out;
+  }
+}
+
+/* Features */
+
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem;
+}
+
+.feature:first-of-type {
+  margin-top: 21rem 0;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
   }
 }
