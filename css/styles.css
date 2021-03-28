@@ -892,3 +892,7 @@ ShowCase
   padding-bottom: 1rem;
   border-bottom: #444 1px solid;
 }
+
+.footer__brand {
+  text-align: center;
+}
