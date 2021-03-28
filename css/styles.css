@@ -654,6 +654,10 @@ Callout
   color: #fff;
 }
 
+.block--dark .collapsible__heading {
+  color: #fff;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -681,11 +685,12 @@ Callout
 .nav__item {
   padding: 0.5rem 2rem;
   border-bottom: 1px solid #222;
+  padding: 0 2rem;
 }
 
 .nav__item > a {
   color: #d2d0db;
-  transition: color 0.3s;
+  transition: color 0.5s;
 }
 
 .nav__item > a:hover {
@@ -858,4 +863,32 @@ ShowCase
     width: auto;
     max-width: 770px;
   }
+}
+
+/* Footer */
+.footer {
+  background: rgb(35, 35, 35);
+}
+.footer__section {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.footer .nav__item {
+  border-bottom: none;
+}
+.footer .nav__item > a {
+  color: #555;
+}
+
+.footer .nav__item > a:hover {
+  color: #fff;
+}
+.footer__heading {
+  font-size: 2.5rem;
+  padding-left: 2rem;
+}
+
+.footer__block {
+  padding-bottom: 1rem;
+  border-bottom: #444 1px solid;
 }
