@@ -868,6 +868,7 @@ ShowCase
 /* Footer */
 .footer {
   background: rgb(35, 35, 35);
+  display: grid;
 }
 
 .footer__section {
@@ -895,10 +896,17 @@ ShowCase
 
 .footer__brand {
   text-align: center;
+  padding-top: 4rem;
 }
 
 .footer__list {
   padding-top: 0;
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
