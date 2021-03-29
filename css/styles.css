@@ -575,6 +575,9 @@ Callout
 }
 
 @media screen and (min-width: 768px) {
+  .callout {
+    transform: translateY(5rem);
+  }
   .callout .grid--cols-1x2 {
     grid-template-columns: 1fr auto;
   }
